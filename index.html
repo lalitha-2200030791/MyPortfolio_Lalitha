@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalitha Sri Vidhya R | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Header */
+        .header {
+            background: #fff;
+            padding: 20px 50px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #007bff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            font-weight: 500;
+        }
+
+        #dark-mode-toggle {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-pic {
+    width: 220px;  /* Reduced size */
+    height: 220px; /* Reduced size */
+    border-radius: 50%;
+    border: 3px solid white;  /* Thin white border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+
+
+    .hero h2 {
+    font-size: 3rem;
+        }
+
+        .hero span {
+            color: #ffdd57;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: white;
+            color: #007bff;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #ffdd57;
+            color: #333;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .projects, .experience, .contact, .bio, .skills, .testimonials {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            padding: 40px;
+        }
+
+        .project {
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 4px solid #007bff;
+            text-align: left;
+        }
+
+        /* Footer */
+        .footer {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+
+        .dark-mode .header {
+            background: #222;
+        }
+
+        .dark-mode .projects,
+        .dark-mode .experience,
+        .dark-mode .contact {
+            background: #444;
+        }
+
+        .dark-mode .footer {
+            background: #111;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section id="hero" class="hero">
+        <img src="images/me2.jpg" alt="Lalitha" class="profile-pic">
+        <h2>Hello, I'm <span>Lalitha</span></h2>
+        <p>Software Developer | Web Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate software developer skilled in web development, cybersecurity, and cloud computing. I believe in continuous learning and thrive in dynamic environments that push my boundaries.</p>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="bio">
+        <div class="container">
+            <h2>My Bio</h2>
+            <p>I started my journey as a programmer because of my love for technology and problem-solving. Outside of coding, I enjoy reading books, exploring new cultures, and staying active with yoga. My goal is to blend creativity and technical skills to build impactful solutions.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Relevant Skills</h2>
+            <ul>
+                <li>Programming Languages:  C,Java,HTML,CSS,Python</li>
+                <li>Frameworks/Libraries: Bootstrap, NodeJS, React, Spring</li>
+                <li>Databases: MySQL, PostgreSQL, MongoDB</li>
+                <li>Academic Coursework: Data Structures, OS, DBMS,Computer Networks, OOPS</li>
+                <li>Certifications: Generative AI (Google)—Networking Essentials (Cisco)</li>
+                <li>Global Certifications: Red Hat Enterprise Application Developer—Salesforce AI Associate</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Culture Cove</h3>
+                <p>Developed an Indian Culture Awareness Platform using the Spring Boot web development using JSP,CSS and MySQL, allowing users to browse information about the rich tradition of India. The platform offers an interactive and secure experience, connecting tourists and students seamlessly.</p>
+                 <a href="https://github.com/lalitha-2200030791/springboot_deployment_ps05"><b>Check It here</b></a>
+            </div>
+            <div class="project">
+                <h3>Ctrl+Play</h3>
+                <p>Developed six different mini-games, each with unique mechanics, including puzzles, strategy, and reflex-based challenges.
+Designed a responsive interface using HTML, CSS, and JavaScript, ensuring smooth gameplay across different devices.Focused on enhancing user experience with simple controls and appealing visuals.</p>
+                        <a href="https://github.com/lalitha-2200030791/Ctrl-PlayWeb"><b>Check It here</b></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+    <div class="container">
+        <h2>Experience</h2>
+        <ul>
+            <li><b>Full Stack Developer at Codsoft</b></li>
+            <p>Developed an <b>Online Art Gallery</b> using ReactJS, MongoDB, CSS, and JavaScript (MERN Stack).</p>
+            <ul>
+                <li>Implemented payment gateway on art purchase to user and facilitated user authentication and authorization.</li>
+                <li>Deployed the website using Vercel App, ensuring scalability and reliability.</li>
+                <li>Implemented a user dashboard to provide all functionalities in one.</li>
+                <li>Developed soft skills in problem-solving, project management, adaptability, and a strong work ethic.</li>
+            </ul>
+
+        </ul>
+        <b><a href="https://github.com/lalitha-2200030791/Learnathon_ArtGallery_S1509" target="_blank">Project Link</a></b>
+    </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section id="resume" class="resume">
+    <div class="container">
+        <h2>My Resume</h2>
+        <p>Here is my resume:</p>
+        <a href="https://drive.google.com/file/d/1wniEaifymzHdV6vFcMO7ut45Jho8V-8P/view?usp=sharing"><b>Check It here</b></a>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: 2200030791cseh@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/lalitha-sri-vidhya-r-53a0b7255/"><b>Check It here</b></a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Lalitha. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+</body>
+</html>
